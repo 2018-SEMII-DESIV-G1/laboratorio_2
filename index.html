@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <title>Laboratorio #2</title>
+</head>
+<body class="py-5">
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-8 offset-md-2">
+            <h1>Laboratorio #2</h1>
+            <p><strong>I. Resolver. Problema extraído de <a href="https://projecteuler.net/problem=18">project euler.</a></strong></p>
+            <p><div role="problem">
+            <p>Al comenzar en la parte superior del triángulo a continuación y moverse a los números adyacentes en la fila siguiente, el total máximo de arriba a abajo es 23.</p>
+            <p style="text-align:center;font-family:'courier new';font-size:12pt;"><span style="color:#ff0000;"><b>3</b></span><br><span style="color:#ff0000;"><b>7</b></span> 4<br>
+            2 <span style="color:#ff0000;"><b>4</b></span> 6<br>
+            8 5 <span style="color:#ff0000;"><b>9</b></span> 3</p>
+            <p>Eso es, 3 + 7 + 4 + 9 = 23.</p>
+            <p>Encuentre el total máximo de arriba a abajo del triángulo de abajo:</p>
+            <p style="text-align:center;font-family:'courier new';">75<br>
+            95 64<br>
+            17 47 82<br>
+            18 35 87 10<br>
+            20 04 82 47 65<br>
+            19 01 23 75 03 34<br>
+            88 02 77 73 07 63 67<br>
+            99 65 04 28 06 16 70 92<br>
+            41 41 26 56 83 40 80 70 33<br>
+            41 48 72 33 47 32 37 16 94 29<br>
+            53 71 44 65 25 43 91 52 97 51 14<br>
+            70 11 33 28 77 73 17 78 39 68 17 57<br>
+            91 71 52 38 17 14 91 43 58 50 27 29 48<br>
+            63 66 04 68 89 53 67 30 73 16 69 87 40 31<br>
+            04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</p>
+            </div></p>
+          </div>
+      </div>
+      <div class="row pt-4">
+          <div class="col-sm-8 offset-md-2 border py-3">
+            <p><strong>Solución:</strong></p>
+            <form class="solution-form-js" action="">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input solution-input-js" id="customFile">
+                <label class="custom-file-label" for="customFile">Escoja un archivo</label>
+              </div>
+              <div class="d-none pt-3 result-wrapper-js">
+                <p><strong class="text-danger">El resultado de la suma es: <span class="result-txt-js"></span></strong></p>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- Dependencies -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Own -->
+    <script src="js/main.js"></script>
+    <script>
+      (function(module, fr) {
+        if(!fr){
+            alert('Su navegador no soporta esta aplicación.');
+            return false;
+        }
+        module.init();
+      })(window.module, window.FileReader);
+    </script>
+</body>
+</html>
